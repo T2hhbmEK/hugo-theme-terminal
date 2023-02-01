@@ -9,7 +9,14 @@
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.1);
 
-    padding: 10px;
+    &-title {
+        margin-top: -$codeblock-padding / 2;
+        padding-bottom: $codeblock-padding / 2;
+        margin-bottom: $codeblock-padding / 2;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom-style: dashed;
+    }
+
     &-copy {
         position: absolute;
         top: 0.3em;
