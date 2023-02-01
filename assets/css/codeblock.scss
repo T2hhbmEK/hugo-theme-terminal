@@ -82,8 +82,10 @@
     overflow: auto;
 }
 
-pre code {
+.codeblock code,
+.post pre code {
     color: unset;
+    background: unset;
     border: none;
     background: 0 0;
     padding: 0;

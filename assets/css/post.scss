@@ -110,6 +110,13 @@
       color: $accent;
     }
   }
+
+  code {
+    color: $accent;
+    background: transparentize($accent, .8);
+    padding: 1px 2px;
+    border-radius: 4px;
+  }
 }
 
 .post--regulation {
