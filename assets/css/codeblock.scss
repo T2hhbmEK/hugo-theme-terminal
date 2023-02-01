@@ -1,0 +1,57 @@
+.chroma .lnt,
+.chroma .ln {
+    margin: 0px;
+}
+
+.codeblock {
+    padding: 10px;
+}
+
+.codeblock table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.codeblock table>tbody {
+    display: block;
+    width: 100%;
+}
+
+.codeblock table>tbody>tr {
+    display: flex;
+}
+
+// Line No
+.chroma .lntable>tbody>tr>td:first-child>pre {
+    margin-right: 20px;
+    min-width: 20px;
+    text-align: right;
+}
+.chroma .lntable>tbody>tr>td:first-child>pre>code>span {
+    padding: 0;
+}
+
+.chroma .lntable>tbody>tr>td:last-child {
+    overflow-x: auto;
+}
+
+.post-content .highlight pre {
+    width: auto;
+}
+
+.highlight pre {
+    border: 0;
+    margin: initial;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    overflow: auto;
+}
+
+pre code {
+    color: unset;
+    border: none;
+    background: 0 0;
+    padding: 0;
+}
