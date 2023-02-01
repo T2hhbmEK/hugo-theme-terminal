@@ -4,7 +4,32 @@
 }
 
 .codeblock {
+    $codeblock-padding: 20px;
+    padding: $codeblock-padding $codeblock-padding / 2;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
     padding: 10px;
+    &-copy {
+        position: absolute;
+        top: 0.3em;
+        right: 0.2em;
+        border: 1px solid rgba(255, 255, 255, .1);
+        font-size: .8em !important;
+        background: hsla(0, 0%, 87.8%, .2) !important;
+        color: #bbb !important;
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, .2) !important;
+        border-radius: 0 !important;
+        margin: 6px !important;
+        padding: 10px !important;
+        user-select: none;
+        opacity: 0;
+        transition: .3s ease-in-out;
+    }
+
+    &:hover &-copy {
+        opacity: 1;
+    }
 }
 
 .codeblock table {
@@ -28,6 +53,7 @@
     min-width: 20px;
     text-align: right;
 }
+
 .chroma .lntable>tbody>tr>td:first-child>pre>code>span {
     padding: 0;
 }
