@@ -1,0 +1,13 @@
+<div class="codeblock bg">
+    <div class="codeblock-toolbox">
+        {{ if .Attributes.title }}
+        <div class="codeblock-title">
+            <code>
+                <span>{{ .Attributes.title }}</span>
+            </code>
+        </div>
+        {{ end }}
+    </div>
+    {{ transform.Highlight .Inner .Type .Options }}
+    <button class="codeblock-copy">Copy</button>
+</div>
