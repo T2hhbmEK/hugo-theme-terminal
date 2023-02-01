@@ -114,8 +114,9 @@
   code {
     color: $accent;
     background: transparentize($accent, .8);
-    padding: 1px 2px;
-    border-radius: 4px;
+    display: inline-block;
+    padding: 0 0.3em;
+    border-radius: 0;
   }
 }
 
