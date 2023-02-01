@@ -302,3 +302,22 @@ hr {
 sup {
  line-height: 0;
 }
+
+/* scrollbar styles for Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $border-color transparent;
+}
+
+/* scrollbar styles for Chromium */
+::-webkit-scrollbar {
+  height: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $border-color;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
