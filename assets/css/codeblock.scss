@@ -4,17 +4,16 @@
 }
 
 .codeblock {
-    $codeblock-padding: 20px;
-    padding: $codeblock-padding $codeblock-padding / 2;
+    $codeblock-padding: 10px;
+    padding: $codeblock-padding $codeblock-padding;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.1);
 
-    &-title {
-        margin-top: -$codeblock-padding / 2;
-        padding-bottom: $codeblock-padding / 2;
-        margin-bottom: $codeblock-padding / 2;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        border-bottom-style: dashed;
+    &-toolbox {
+        padding: $codeblock-padding $codeblock-padding;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 0;
     }
 
     &-copy {
@@ -82,6 +81,7 @@
     overflow: auto;
 }
 
+.codeblock-toolbox code,
 .codeblock code,
 .post pre code {
     color: unset;
