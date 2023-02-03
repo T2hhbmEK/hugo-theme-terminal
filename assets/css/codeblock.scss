@@ -18,16 +18,15 @@
 
     &-copy {
         position: absolute;
-        top: 0.3em;
-        right: 0.2em;
+        top: $codeblock-padding / 2;
+        right: $codeblock-padding / 2;
         border: 1px solid rgba(255, 255, 255, .1);
-        font-size: .8em !important;
         background: hsla(0, 0%, 87.8%, .2) !important;
         color: #bbb !important;
         box-shadow: 0 2px 0 0 rgba(0, 0, 0, .2) !important;
         border-radius: 0 !important;
-        margin: 6px !important;
-        padding: 10px !important;
+        margin: $codeblock-padding / 4 !important;
+        padding: $codeblock-padding / 4 $codeblock-padding / 2 !important ;
         user-select: none;
         opacity: 0;
         transition: .3s ease-in-out;
